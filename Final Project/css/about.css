@@ -1,0 +1,187 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+body {
+    font-family: "Arial", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+header {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+    height: 100px;
+}
+
+.logo {
+    flex: 1;
+    padding-top: 100px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 250px;
+}
+
+nav {
+    flex: 3;
+    padding-top: 100px;
+    text-align: center; 
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px; 
+}
+
+nav ul li a:hover {
+    color: #555; 
+}
+
+/* About Section */
+.image-section {
+    margin-top: 100px;
+    padding-bottom: 80px; 
+}
+
+.image-section .container {
+    position: relative; 
+}
+
+.image-overlay {
+    position: relative; 
+    overflow: hidden; 
+}
+
+.image-overlay img {
+    width: calc(100% + 160px); 
+    height: auto;
+    display: block;
+    margin: 0 -80px; 
+}
+
+.second-image img {
+    width: 80%; 
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+}
+
+/* Overlay Content Styling */
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    max-width: 80%;
+}
+
+.overlay-content h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.overlay-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    background-color: #5A1010;
+    padding: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 80px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: start;
+}
+
+.about-section h3 {
+    text-align: left;
+}
+
+.about-section h3,
+.contact-section h3,
+.social-media-section h3 {
+    margin-top: 0;
+    padding-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.contact-section .btn {
+    margin-top: 10px;
+    color: #FFFFFF;
+    background-color: #5A1010;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.contact-section .btn:hover {
+    background-color: white;
+    color: #5A1010;
+}
+
+.social-media-section {
+    text-align: center;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media img {
+    filter: brightness(0) invert(1);
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
